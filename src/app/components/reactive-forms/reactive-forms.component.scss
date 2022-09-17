@@ -4,11 +4,17 @@ $ciRed: #ff00aa;
 $ciGreen: #8fd3b8;
 $second: #0c1016;
 
+.title {
+    margin-top: 10px;
+    margin-left: 26px;
+}
+
 .cardContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 96px);
+    // height: calc(100vh - 96px);
+    margin-top: 40px;
 }
 
 form {

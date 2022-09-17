@@ -1,5 +1,5 @@
 <!-- <p>import { ReactiveFormsModule } from '@angular/forms';</p> -->
-<p>Form Arrays & Dynamic Forms with Reactive Forms.</p>
+<p class="title">Form Arrays & Dynamic Forms with Reactive Forms.</p>
 
 <div class="cardContainer">
 
@@ -12,9 +12,9 @@
                 <div class="form-array" [formGroupName]="i" [id]="i">
                     <input type="text" placeholder="vorname" formControlName="vorname">
                     <input type="text" placeholder="nachname" formControlName="nachname">
-                </div>
 
-                <button (click)="removeMember(i)">Mitglied entfernen</button>
+                    <button (click)="removeMember(i)">Mitglied entfernen</button>
+                </div>
             </ng-container>
         </ng-container>
 
