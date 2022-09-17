@@ -22,6 +22,10 @@ export class DynamicArrayComponent implements OnInit {
     });
   }
 
+  public removeMember(index: number): void {
+    this.memberList.removeAt(index);
+  }
+
   public _createMember(): FormGroup {
     return this._fb.group({
       vorname: ['', [Validators.required], []],
