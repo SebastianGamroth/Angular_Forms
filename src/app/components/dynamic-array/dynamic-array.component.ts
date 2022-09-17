@@ -22,6 +22,17 @@ export class DynamicArrayComponent implements OnInit {
     });
   }
 
+  public _createMember(): FormGroup {
+    return this._fb.group({
+      vorname: ['', [Validators.required], []],
+      nachname: ['', [Validators.required], []]
+    });
+  }
+
+  public addMember(): void {
+    this.memberList.push(this._createMember());
+  }
+
   public get memberList(): FormArray {
     return this.memberListForm.get('memberList') as FormArray;
   }
