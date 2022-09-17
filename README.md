@@ -1,9 +1,11 @@
-# AngularForms
+# Angular Forms
 
-This is an example of Angular Reactive Forms.
+This is an example of Angular Forms.
 
+1. Reactive Forms.
+2. Form Arrays & Dynamic Forms with Reactive Forms.
 
-
+##
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
 

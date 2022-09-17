@@ -8,7 +8,7 @@ $second: #0c1016;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 96px);
 }
 
 form {

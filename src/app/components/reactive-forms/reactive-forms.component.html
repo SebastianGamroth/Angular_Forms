@@ -1,4 +1,5 @@
 <!-- <p>import { ReactiveFormsModule } from '@angular/forms';</p> -->
+<p>Reactive Forms</p>
 
 <div class="cardContainer">
 
@@ -6,7 +7,7 @@
 
         <p>{{ loginForm.value | json }}</p>
 
-        <input formControlName="username" type="text">
+        <input formControlName="username" placeholder="Username" type="text">
 
         <ng-container *ngIf="loginForm.controls['username'] as username">
             <ng-container *ngIf="username.dirty || username.touched">
@@ -24,7 +25,7 @@
             </ng-container>
         </ng-container>
 
-        <input formControlName="password" type="password">
+        <input formControlName="password" placeholder="Password" type="password">
 
         <ng-container *ngIf="loginForm.controls['password'] as username">
             <ng-container *ngIf="username.dirty || username.touched">
