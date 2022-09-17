@@ -1,1 +1,21 @@
-<h1>Angular Forms</h1>
+<mat-drawer-container class="example-container">
+
+  <mat-drawer mode="side" opened>
+    <div class="logo"></div>
+    
+    <app-menu></app-menu>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Angular Examples of Forms</span>
+      <span class="example-spacer"></span>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+
+</mat-drawer-container>
