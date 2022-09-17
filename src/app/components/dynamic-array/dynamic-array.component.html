@@ -9,8 +9,9 @@
 
         <ng-container formArrayName="memberList">
             <ng-container *ngFor="let member of memberList.controls; let i = index">
-                <div class="form-array">
-                    {{ member.value | json }}
+                <div class="form-array" [formGroupName]="i" [id]="i">
+                    <input type="text" placeholder="vorname" formControlName="vorname">
+                    <input type="text" placeholder="nachname" formControlName="nachname">
                 </div>
             </ng-container>
         </ng-container>
