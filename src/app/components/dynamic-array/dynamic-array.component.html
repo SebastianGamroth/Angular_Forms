@@ -1,2 +1,14 @@
 <!-- <p>import { ReactiveFormsModule } from '@angular/forms';</p> -->
 <p>Form Arrays & Dynamic Forms with Reactive Forms.</p>
+
+<div class="cardContainer">
+
+    <form [formGroup]="memberListForm">
+
+        <input type="text" placeholder="List name" formControlName="listName">
+
+        <button [disabled]="isDisabled()" type="submit">Submit</button>
+
+    </form>
+
+</div>

@@ -22,4 +22,8 @@ export class DynamicArrayComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public isDisabled(): boolean {
+    return !(this.memberListForm.valid && (this.memberListForm.touched || this.memberListForm.dirty));
+  }
+
 }
