@@ -1,15 +1,15 @@
 <mat-drawer-container class="example-container">
 
-  <mat-drawer mode="side" opened>
+  <mat-drawer #drawer mode="side" [opened]="true">
     <div class="logo"></div>
-    
+
     <app-menu></app-menu>
   </mat-drawer>
 
   <mat-drawer-content>
     <mat-toolbar color="primary">
       <button mat-icon-button class="example-icon">
-        <mat-icon>menu</mat-icon>
+        <mat-icon (click)="drawer.toggle()">menu</mat-icon>
       </button>
       <span>Angular Examples of Forms</span>
       <span class="example-spacer"></span>
