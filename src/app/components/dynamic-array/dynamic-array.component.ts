@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-dynamic-array',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DynamicArrayComponent implements OnInit {
 
-  constructor() { }
+  public memberListForm: FormGroup = this._createForm();
+
+  constructor(private _fb: FormBuilder) { }
+
+  private _createForm(): FormGroup {
+    return this._fb.group({
+      listName: ['', [Validators.required], []],
+      memberList: this._fb.array([])
+    });
+  }
 
   ngOnInit(): void {
   }
