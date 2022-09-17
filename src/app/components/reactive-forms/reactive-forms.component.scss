@@ -1,0 +1,54 @@
+$prime: #ff6e48;
+$ciBlue: #00fff1;
+$ciRed: #ff00aa;
+$ciGreen: #8fd3b8;
+$second: #0c1016;
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+        padding: 20px;
+        border-radius: 10px;
+        border: black 1px solid;
+        margin: 10px 0 0 0;
+
+        &.ng-touched,
+        &.ng-dirty {
+            &.ng-invalid {
+                border: red 1px solid;
+            }
+
+            &.ng-valid {
+                border: green 1px solid;
+            }
+        }
+
+        .error {
+            color: red;
+        }
+    }
+
+    button {
+        color: $second;
+        margin: 10px 0 0 0;
+        padding: 2rem;
+        border: none;
+        border-radius: 10px;
+        background-color: $ciBlue;
+
+        &:disabled {
+            opacity: 0.4;
+            color: $second
+        }
+    }
+}
