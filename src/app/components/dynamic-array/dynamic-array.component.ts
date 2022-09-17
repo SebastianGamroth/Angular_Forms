@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-dynamic-array',
@@ -12,6 +12,9 @@ export class DynamicArrayComponent implements OnInit {
 
   constructor(private _fb: FormBuilder) { }
 
+  ngOnInit(): void {
+  }
+
   private _createForm(): FormGroup {
     return this._fb.group({
       listName: ['', [Validators.required], []],
@@ -19,7 +22,8 @@ export class DynamicArrayComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+  public get memberList(): FormArray {
+    return this.memberListForm.get('memberList') as FormArray;
   }
 
   public isDisabled(): boolean {

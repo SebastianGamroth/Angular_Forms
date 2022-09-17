@@ -7,6 +7,14 @@
 
         <input type="text" placeholder="List name" formControlName="listName">
 
+        <ng-container formArrayName="memberList">
+            <ng-container *ngFor="let member of memberList.controls; let i = index">
+                <div class="form-array">
+                    {{ member.value | json }}
+                </div>
+            </ng-container>
+        </ng-container>
+
         <button [disabled]="isDisabled()" type="submit">Submit</button>
 
     </form>
