@@ -1,1 +1,13 @@
-<p>seat-place works!</p>
+<div *ngFor="let img of image; let i=index">
+    <table>
+        <tr>
+            <td *ngFor="let img of image[i];">
+                <img *ngIf="img; else blanc" src="../assets/img/chair_black.svg">
+            </td>
+        </tr>
+    </table>
+</div>
+
+<ng-template #blanc>
+    <div class="blank"></div>
+</ng-template>

@@ -1,0 +1,14 @@
+table {
+    display: flex;
+    justify-content: center;
+
+    img,
+    .blank {
+        width: 40px;
+        height: 40px;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}

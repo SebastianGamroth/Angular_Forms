@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SeatPlaceComponent {
 
-
+  image: any = [
+    [1, 1, 1],
+    [1, 0, 1],
+    [1, 0, 1]
+  ];
 
 }
