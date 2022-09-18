@@ -12,13 +12,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsComponent } from './components/reactive-forms/reactive-forms.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DynamicArrayComponent } from './components/dynamic-array/dynamic-array.component';
+import { CustomFormFieldsComponent } from './components/custom-form-fields/custom-form-fields.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     ReactiveFormsComponent,
-    DynamicArrayComponent
+    DynamicArrayComponent,
+    CustomFormFieldsComponent
   ],
   imports: [
     BrowserModule,
