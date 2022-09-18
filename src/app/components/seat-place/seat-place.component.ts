@@ -21,6 +21,22 @@ export class SeatPlaceComponent implements ControlValueAccessor {
   public isDisabled: boolean = false;
   public value: string = '';
 
+  public select(option: string): void {
+    if (!this.isDisabled) {
+      if (this.isSelected(option)) {
+        this.value = '';
+      } else {
+        this.value = option;
+      }
+      this.onChange(this.value);
+      this.markAsTouched();
+    }
+  }
+
+  public isSelected(option: string): boolean {
+    return option === this.value;
+  }
+
   writeValue(value: string): void {
     this.value = value;
   }

@@ -1,40 +1,48 @@
-table {
-    display: flex;
-    justify-content: center;
+:host {
 
-    img,
-    .blank {
-        width: 40px;
-        height: 40px;
-    }
-
-    :host{
-        &.ng-touched,
-        &.ng-dirty {
-            &.ng-invalid {
-                border: red 1px solid;
+    &.ng-touched,
+    &.ng-dirty {
+        &.ng-invalid {
+            img {
+                background-color: red;
+                border-radius: 10px;
             }
+        }
 
-            &.ng-valid {
-                border: green 1px solid;
+        &.ng-valid {
+            img {
+                &.selected {
+                    border: green 1px solid;
+                    border-radius: 10px;
+                }
             }
         }
     }
 
-    img {
-        cursor: pointer;
+    table {
+        display: flex;
+        justify-content: center;
 
-        &:hover {
-            background-color: aqua;
-            border-radius: 6px;
-            transition: all 125ms;
+        img,
+        .blank {
+            width: 40px;
+            height: 40px;
         }
 
-        &.selected{
-            background-color: greenyellow;
-            border-radius: 6px;
-            transition: all 125ms;
-        }
+        img {
+            cursor: pointer;
 
+            &:hover {
+                background-color: aqua;
+                border-radius: 6px;
+                transition: all 125ms;
+            }
+
+            &.selected {
+                background-color: greenyellow;
+                border-radius: 6px;
+                transition: all 125ms;
+            }
+        }
     }
 }
