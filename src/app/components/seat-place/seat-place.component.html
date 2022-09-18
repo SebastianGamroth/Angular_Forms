@@ -1,13 +1,11 @@
-<div >
-    <table *ngFor="let img of image; let i=index">
-        <tr >
-            <td *ngFor="let img of image[i]; let j=index">
-                <img *ngIf="img; else blanc" [class.selected]="isSelected('table-'+i+j)" (click)="select('table-'+i+j)"
-                    src="../assets/img/chair_black.svg">
-            </td>
-        </tr>
-    </table>
-</div>
+<table *ngFor="let img of image; let i=index">
+    <tr>
+        <td *ngFor="let img of image[i]; let j=index">
+            <img *ngIf="img; else blanc" [class.selected]="isSelected('table-'+i+j)" (click)="select('table-'+i+j)"
+                src="../assets/img/chair_black.svg">
+        </td>
+    </tr>
+</table>
 
 <ng-template #blanc>
     <div class="blank"></div>

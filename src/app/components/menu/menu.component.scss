@@ -1,4 +1,24 @@
-button {
-    margin-top: 6px;
-    width: 130px;
+mat-button-toggle-group {
+    flex-direction: column;
+    width: 100%;
+    border: none !important;
+    border-radius: 0px !important;
+
+    ::ng-deep {
+        .mat-button-toggle-label-content {
+            padding: 0px;
+        }
+
+        .mat-button-toggle-label-content {
+            white-space: pre-wrap !important;
+            color: #3f51b5 !important;
+            font-weight: 500 !important;
+            line-height: 40px !important;
+        }
+    }
+}
+
+.mat-button-toggle {
+    border-bottom: solid 1.4px #e0e0e0;
+    border-right: solid 1px #e0e0e0;
 }
