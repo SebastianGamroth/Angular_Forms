@@ -8,7 +8,33 @@ table {
         height: 40px;
     }
 
+    :host{
+        &.ng-touched,
+        &.ng-dirty {
+            &.ng-invalid {
+                border: red 1px solid;
+            }
+
+            &.ng-valid {
+                border: green 1px solid;
+            }
+        }
+    }
+
     img {
         cursor: pointer;
+
+        &:hover {
+            background-color: aqua;
+            border-radius: 6px;
+            transition: all 125ms;
+        }
+
+        &.selected{
+            background-color: greenyellow;
+            border-radius: 6px;
+            transition: all 125ms;
+        }
+
     }
 }
