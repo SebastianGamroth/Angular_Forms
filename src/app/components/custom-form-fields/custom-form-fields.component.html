@@ -2,4 +2,17 @@
 
 <p class="title">Custom Form Fields</p>
 
+<div class="cardContainer">
 
+    <form [formGroup]="reservationForm">
+
+        <p>{{ reservationForm.value | json }}</p>
+        <p>Valid: {{ reservationForm.valid }}</p>
+
+        <input type="text" id="firstname" name="firstname" formControlName="firstname" placeholder="firstname">
+
+        <input type="text" id="lastname" name="lastname" formControlName="lastname" placeholder="lastname">
+
+    </form>
+
+</div>
