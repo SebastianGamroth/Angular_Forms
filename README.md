@@ -4,6 +4,7 @@ This is an example of Angular Forms.
 
 1. Reactive Forms.
 2. Form Arrays & Dynamic Forms with Reactive Forms.
+3. Custom Form Fields
 
 ##
 
