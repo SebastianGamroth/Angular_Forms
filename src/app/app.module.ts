@@ -13,6 +13,7 @@ import { ReactiveFormsComponent } from './components/reactive-forms/reactive-for
 import { ReactiveFormsModule } from '@angular/forms';
 import { DynamicArrayComponent } from './components/dynamic-array/dynamic-array.component';
 import { CustomFormFieldsComponent } from './components/custom-form-fields/custom-form-fields.component';
+import { SeatPlaceComponent } from './components/seat-place/seat-place.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CustomFormFieldsComponent } from './components/custom-form-fields/custo
     MenuComponent,
     ReactiveFormsComponent,
     DynamicArrayComponent,
-    CustomFormFieldsComponent
+    CustomFormFieldsComponent,
+    SeatPlaceComponent
   ],
   imports: [
     BrowserModule,
